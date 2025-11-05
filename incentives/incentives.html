@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leviathan Incentives</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Navigation Bar 1 -->
+    <nav class="nav-1">
+        <div class="container">
+            <a href="../index.html" class="logo">Leviathan Projects</a>
+            <div class="nav-links">
+                <a href="../notes.html">Notes</a>
+                <a href="../data.html">Data</a>
+                <a href="https://x.com/leviathannotes" target="_blank" rel="noreferrer">X.com</a>
+                <a href="../donate.html">Donate</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation Bar 2 (Sticky) -->
+    <nav class="nav-2">
+        <div class="container">
+            <button class="menu-toggle" aria-label="Toggle menu">Menu</button>
+            <ul class="nav-menu">
+                <li><a href="incentives.html">Frontpage</a></li>
+                <li><a href="incentives1.html">Part 1</a></li>
+                <li><a href="incentives2.html">Part 2</a></li>
+                <li><a href="incentives3.html">Part 3</a></li>
+                <li><a href="incentives4.html">Part 4</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-section">
+                <h1>Public Sector Incentives</h1>
+                <p>Incentives matter. People, organisations and systems respond to incentives. Noble goals, high performing individuals and well-designed processes are important, but in the long run outcomes will revert to what is incentivised. If we want to change long term outcomes, we should focus on altering the incentives in the system – efforts that directly target outcomes may be effective in the short term, however, these outcomes will eventually revert to what is incentivised.</p>
+                <p>This series will look at four closely related incentive challenges faced by the public sector. It will explore how macro level incentives in the public sector fundamentally differ to those in the private sector, and how this raises challenges for the delivery of state administered services and functions. It will argue that the incentive models that the public sector operate under provide limited feedback on success or failure and, in some cases, actively encourage inefficiency through their approach to risk. </p>
+                <p>The series is made up of four parts:</p>
+                <p><a href="incentives1.html">Part 1: The Nature of Public Sector Risk</a></p>
+                <p><a href="incentives2.html">Part 2: Financial Feedback Loops</a></p>
+                <p><a href="incentives3.html">Part 3: Electoral Feedback Loops</a></p>
+                <p><a href="incentives4.html">Part 4: Funding and Efficiency in the Public Sector</a></p>
+                
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+
+            if (menuToggle && navMenu) {
+                menuToggle.addEventListener('click', function () {
+                    navMenu.classList.toggle('active');
+                });
+
+                // Close menu when clicking a link
+                navMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navMenu.classList.remove('active');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
