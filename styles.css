@@ -8,17 +8,18 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: Georgia, 'Times New Roman', Times, serif
+    font-size: 16px;    
+    line-height: 1.4;
     color: #333;
     background-color: #f8f9fa;
 }
 
 /* Container for layout */
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 /* Navigation Bar 1 - Top bar */
@@ -62,9 +63,9 @@ body {
 
 /* Navigation Bar 2 - Sticky bar */
 .nav-2 {
-    background-color: #ffffff;
+    background-color: #636a72;
     border-bottom: 1px solid #dee2e6;
-    padding: 15px 0;
+    padding: 10px 0;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -84,7 +85,7 @@ body {
 }
 
 .nav-2 .nav-menu a {
-    color: #495057;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
@@ -100,12 +101,12 @@ body {
     height: 2px;
     bottom: 0;
     left: 50%;
-    background-color: #007bff;
+    background-color: #495057;
     transition: width 0.3s ease, left 0.3s ease;
 }
 
 .nav-2 .nav-menu a:hover {
-    color: #007bff;
+    color: #dee2e6;
 }
 
 .nav-2 .nav-menu a:hover::after {
@@ -115,19 +116,19 @@ body {
 
 /* Main content area */
 .main-content {
-    padding: 40px 0;
+    padding: 30px 0;
     min-height: 150vh; /* Ensures scrollable content */
 }
 
 .main-content h1 {
-    font-size: 2.2rem;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 15px;
     color: #212529;
 }
 
 .main-content h2 {
     font-size: 1.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     color: #212529;
 }
 
@@ -164,11 +165,11 @@ body {
     line-height: 1.6;
 }
 .content-section {
-    background-color: #ffffff;
-    padding: 30px;
+    background-color: white;
+    padding: 20px;
     margin-bottom: 30px;
     border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(45, 44, 44, 0.1);
 }
 
 /* Mobile menu toggle */
@@ -176,11 +177,12 @@ body {
     display: none;
     background: none;
     border: none;
-    color: #495057;
+    color: #ffffff;
     font-size: 1.5rem;
     cursor: pointer;
     padding: 0 10px;
 }
+
 
 /* Responsive Design */
 @media (max-width: 992px) {
@@ -222,7 +224,7 @@ body {
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: #ffffff;
+        background-color: #636a72;
         flex-direction: column;
         padding: 15px 0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -237,6 +239,7 @@ body {
         padding: 12px 20px;
         text-align: center;
         font-size: 1.1rem;
+        color:#ffffff
     }
 
     .nav-2 .nav-menu a::after {
@@ -250,11 +253,23 @@ body {
     }
 
     .main-content h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+    }
+
+    .main-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .main-content h3 {
+        font-size: 1.2rem;
+    } 
+
+    .main-content p {
+        font-size: 1rem;
     }
 
     .content-section {
-        padding: 20px;
+        padding: 10px;
     }
 }
 
