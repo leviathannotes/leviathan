@@ -147,13 +147,13 @@ body {
 
 .main-content p {
     margin-bottom: 16px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #555;
 }
 
 .main-content ul {
     margin-bottom: 16px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #555;
     list-style-position: inside;
     padding-left: 0;
@@ -163,6 +163,11 @@ body {
 .main-content ul li {
     margin-bottom: 8px;
     line-height: 1.6;
+}
+
+.main-content blockquote {
+    font-size: 1.1rem;
+    font-style: italic;
 }
 .content-section {
     background-color: white;
@@ -257,19 +262,19 @@ body {
     }
 
     .main-content h2 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 
     .main-content h3 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     } 
 
     .main-content p {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .main-content ul {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     } 
 
     .content-section {
