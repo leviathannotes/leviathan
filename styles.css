@@ -157,11 +157,22 @@ body {
     color: #555;
     list-style-position: inside;
     padding-left: 0;
-    list-style: none;
 }
 
+.main-content ol {
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+    color: #555;
+    list-style-position: outside;
+    padding-left: 18px;
+}
 .main-content ul li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.main-content ol li {
+    margin-bottom: 10px;
     line-height: 1.4;
 }
 
